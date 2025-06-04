@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="task-input">
+    <input type="text" id="taskName" placeholder="Enter task">
+    <select id="taskCategory">
+      <option value="smartmedia">Smartmedia</option>
+      <option value="NWC">NWC</option>
+      <option value="SC">SC</option>
+      <option value="MTC">MTC</option>
+      <option value="other">Other</option>
+    </select>
+    <button onclick="addTask()">Add Task</button>
+    <button onclick="exportPDF()">Export PDF</button>
+  </div>
+
+  <h3>To Do</h3>
+  <ul id="todoList"></ul>
+
+  <h3>Done</h3>
+  <ul id="doneList"></ul>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
